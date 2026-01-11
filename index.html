@@ -5,17 +5,38 @@
         <title>Kaimono</title>
     </head>
     <body>
-        <h1>今日の買い物</h1>
+        <header>
+            <h1>今日の買い物</h1>
+        </header>
+        
+        <main>
+            <section>
+                <!-- ラベル選択か新規入力で買い物リストに買うものを追加 -->
+                <input id="itemInput" type="text" onkeyup="if(event.key==='Enter') addItem()">
+                <button onclick="addItem()">追加</button>
+            </section>
+            <section>
+                <!-- ここは自動的に追加された買うものを表示 -->
+                <ul id="itemList"></ul>
+            </section>
+            <section>
+                <!-- お金のログ画面へ遷移するボタン -->
+                <button onclick="show('payment')">支払い登録</button>
+            </section>
+        </main>
 
-        <p>ここにラベル選択や買うものリストが入ります（未実装）</p>
-
-        <button onclick="show('payment')">支払い登録</button>
-        <button onclick="show('history')">履歴へ</button>
-
-        <script>
-            function show(view) {
-                alert("画面切り替え: " + view + "（未実装）");
-            }
-        </script>
+        <footer>
+            <script>
+                function addItem() {
+                    const input = document.getElementById("itemInput");
+                    if (!input.value.trim())
+                        return;
+                    const li = document.createElement("li");
+                    li.textContent = input.value;
+                    document.getElementById("itemList").appendChild(li)
+                    input.value = "";
+                }
+            </script>
+        </footer>
     </body>
 </html>
