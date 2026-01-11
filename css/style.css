@@ -1,0 +1,12 @@
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.Done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

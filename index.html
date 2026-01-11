@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Kaimono</title>
+
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -32,11 +35,31 @@
                     if (!input.value.trim())
                         return;
                     const li = document.createElement("li");
-                    li.textContent = input.value;
-                    document.getElementById("itemList").appendChild(li)
+
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+
+                    const span = document.createElement("span");
+                    span.textContent = input.value;
+
+                    document.getElementById("itemList").appendChild(li);
+                    li.appendChild(checkbox);
+                    li.appendChild(span);
+
+                    checkbox.onchange = () => {
+                        li.classList.toggle("Done", checkbox.checked);
+                    }
                     input.value = "";
                 }
             </script>
         </footer>
     </body>
 </html>
+
+<!-- 
+    追加した項目をクリックで削除できるようにする
+
+チェック（買った／まだ）を付ける
+
+ラベル化するかどうかのUIを横に足す
+-->
