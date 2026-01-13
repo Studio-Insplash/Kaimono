@@ -49,6 +49,14 @@
                     checkbox.onchange = () => {
                         li.classList.toggle("Done", checkbox.checked);
                     }
+
+                    const deletBtn = document.createElement("button");
+                    deletBtn.textContent = "x";
+                    deletBtn.onclick = () => {
+                        li.remove();
+                    };
+                    li.appendChild(deletBtn);
+
                     input.value = "";
                 }
             </script>
