@@ -13,6 +13,11 @@
         <!-- JS -->
          <script src="js/main.js" defer></script>
     </head>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js");
+        }
+    </script>
     <body>
         <header>
             <h1>今日の買い物</h1>
