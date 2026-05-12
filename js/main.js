@@ -1,0 +1,1 @@
+// TODO: input -> register -> generate shopping item with checkboxの実装
