@@ -29,4 +29,7 @@ addButton.addEventListener("click", () => {
     li.appendChild(checkbox);
     li.appendChild(label);
     shoppingList.appendChild(li);
+
+    // 入力フォームのリセット
+    itemInput.value = "";
 })
