@@ -1,5 +1,7 @@
 // TODO: input -> register -> generate shopping item with checkboxの実装
 let itemInput = document.getElementById("itemInput");
+// protect empty input
+if (itemInput.value === "") return;
 let addButton = document.getElementById("addButton");
 let shoppingList = document.getElementById("shoppingList");
 
