@@ -32,4 +32,6 @@ addButton.addEventListener("click", () => {
     itemInput.value = "";
 })
 
-// TODO add clearButton event listener
+clearButton.addEventListener("click", () => {
+    shoppingList.innerHTML = "";
+})
