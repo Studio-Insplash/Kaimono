@@ -1,37 +1,41 @@
+// DOM references
 let itemInput = document.getElementById("itemInput");
 let addButton = document.getElementById("addButton");
+let clearButton = document.getElementById("clearButton");
 let shoppingList = document.getElementById("shoppingList");
 
+// Add item to shopping list
 addButton.addEventListener("click", () => {
-    // prevent empty input
+    // Prevent empty input
     if (itemInput.value === "") return;
 
-    // idを事前に用意
+    // Generate unique id for checkbox/label linkage
     let id = "item-" + Date.now();
 
-    // li要素を作成
+    // Create list item container
     let li = document.createElement("li");
     li.className = "shoppingItem";
 
-    // checkbox作成
+    // Create checkbox (state)
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = id;
 
-    // label作成
+    // Create label (display)
     let label = document.createElement("label");
     label.textContent = itemInput.value;
     label.htmlFor = checkbox.id;
 
-    // つなぐ
+    // Compose structure
     li.appendChild(checkbox);
     li.appendChild(label);
     shoppingList.appendChild(li);
 
-    // 入力フォームのリセット
+    // Reset input field
     itemInput.value = "";
 })
 
+// Clear all items from list
 clearButton.addEventListener("click", () => {
     shoppingList.innerHTML = "";
 })
