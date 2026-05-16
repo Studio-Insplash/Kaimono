@@ -1,0 +1,29 @@
+/* box sizingを統一 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body {
+    margin: 0;
+}
+
+/* 画像ははみ出さない */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* フォントのベース */
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+/* スマホ用レイアウト */
+body {
+    max-width: 480px;
+    margin: 0 auto;
+}
