@@ -27,3 +27,8 @@ body {
     max-width: 480px;
     margin: 0 auto;
 }
+
+/* shopping list container */
+#shoppingList {
+    list-style-type: none;
+}
