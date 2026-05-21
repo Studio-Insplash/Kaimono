@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="manifest" href="./manifest.json">
     <title>Kaimono</title>
 </head>
 <body>
-    <!-- Shopping list container -->
-    <ul id="shoppingList"></ul>
-
     <!-- Input field for new item -->
     <input type="text" id="itemInput">
-
+    
     <!-- Action buttons -->
     <button id="addButton">登録</button>
     <button id="clearButton">クリア</button>
 
+    <!-- Shopping list container -->
+    <ul id="shoppingList"></ul>
+
     <!-- Main script -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 
     <!-- Service Worker -->
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('js/sw.js');
+            navigator.serviceWorker.register('./js/sw.js');
         }
     </script>
 </body>
