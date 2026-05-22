@@ -32,3 +32,13 @@ body {
 #shoppingList {
     list-style-type: none;
 }
+
+/* Input and Actions */
+#addItemSection {
+    margin-top: 4.5rem;
+}
+
+/* Layout clear button */
+#clearButton {
+
+}

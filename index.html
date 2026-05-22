@@ -9,18 +9,23 @@
 </head>
 <body>
     <!-- Input and Actions -->
-    <section>
+    <section id="addItemSection">
         <!-- Input field for new item -->
         <form id="addItemForm">
             <input type="text" id="itemInput">
         </form>
-    
-        <!-- Action buttons -->
-        <button id="clearButton">クリア</button>
     </section>
 
-    <!-- Shopping list container -->
-    <ul id="shoppingList"></ul>
+    <section id="shoppingListSection">
+        <!-- Main title -->
+        <h2>Today's Shopping List</h2>
+
+        <!-- Action buttons -->
+        <button id="clearButton">クリア</button>
+
+        <!-- Shopping list container -->
+        <ul id="shoppingList"></ul>
+    </section>
 
     <!-- Main script -->
     <script src="./js/main.js"></script>
