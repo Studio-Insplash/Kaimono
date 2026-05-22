@@ -1,13 +1,16 @@
 // DOM references
 let itemInput = document.getElementById("itemInput");
-let addButton = document.getElementById("addButton");
+let addItemForm = document.getElementById("addItemForm");
 let clearButton = document.getElementById("clearButton");
 let shoppingList = document.getElementById("shoppingList");
 
 // Add item to shopping list
-addButton.addEventListener("click", () => {
+addItemForm.addEventListener("submit", (event) => {
+    // Prevent page reload
+    event.preventDefault();
+
     // Prevent empty input
-    if (itemInput.value === "") return;
+    if (itemInput.value.trim() === "") return;
 
     // Generate unique id for checkbox/label linkage
     let id = "item-" + Date.now();
