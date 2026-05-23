@@ -38,7 +38,9 @@ body {
     margin-top: 4.5rem;
 }
 
-/* Layout clear button */
-#clearButton {
-
+/* Layout shopping list header */
+.shoppingListHeader {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
