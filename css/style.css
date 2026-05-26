@@ -64,9 +64,16 @@ main {
 
 /* Shopping item size */
 .shoppingItem label {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .shoppingItem input[type="checkbox"] {
     transform: scale(1.5);
+}
+
+/* Shopping item layout */
+.shoppingItem {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
