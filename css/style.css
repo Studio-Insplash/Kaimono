@@ -77,3 +77,8 @@ main {
     justify-content: center;
     gap: 8px;
 }
+
+/* Test for safari browser */
+body {
+    background: red;
+}
