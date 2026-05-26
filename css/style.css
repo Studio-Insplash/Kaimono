@@ -64,21 +64,15 @@ main {
 
 /* Shopping item size */
 .shoppingItem label {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .shoppingItem input[type="checkbox"] {
-    transform: scale(1.5);
+    transform: scale(2.0);
 }
 
 /* Shopping item layout */
 .shoppingItem {
     display: flex;
-    justify-content: center;
     gap: 8px;
-}
-
-/* Test for safari browser */
-body {
-    background: red;
 }
