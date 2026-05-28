@@ -69,6 +69,7 @@ main {
 
 .shoppingItem input[type="checkbox"] {
     transform: scale(1.5);
+    transform-origin: center;
 }
 
 /* Shopping item layout */
