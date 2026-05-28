@@ -75,5 +75,11 @@ main {
 /* Shopping item layout */
 .shoppingItem {
     display: flex;
+    align-items: center;
     gap: 8px;
+}
+
+/* renew check */
+body {
+    background-color: red;
 }
