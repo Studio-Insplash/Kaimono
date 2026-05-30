@@ -79,6 +79,13 @@ main {
     font-size: 16px;
 }
 
+/* Action section Layout */
+#actionSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* Clear button size */
 #clearButton {
     font-size: 16px;
