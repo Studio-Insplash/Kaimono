@@ -88,6 +88,9 @@ main {
 
 /* Clear button size */
 #clearButton {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     font-size: 16px;
 }
 
