@@ -68,11 +68,6 @@ body {
     font-family: var(--font-base);
 }
 
-/* Word space for header */
-.shoppingListHeader h2 {
-    letter-spacing: 0.5rem;
-}
-
 /* Base layout */
 main {
     display: flex;
